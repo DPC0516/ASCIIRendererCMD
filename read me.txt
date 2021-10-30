@@ -1,0 +1,60 @@
+module
+
+1. Pillow
+2. opencv-python
+
+how to use
+
+1. place video file to play in source_vedio folder. video file name must not contain blanks
+2. convert source video to each frames
+3. play it
+
+commands
+
+cmd: set_source_video [video_file_name]
+usg: select the source video in source_video folder to convert to frame
+ex: >>>set_source_video vedio_name.mp4
+
+cmd: convert_to_frame
+usg: converts source video to frames in frames folder
+ex: >>>convert_to_frame
+
+cmd: play
+usg: plays rendered frames in console. automatically starts rendering if frames are not had been rendered
+ex: >>>play
+
+cmd: set_frame_except_time [number]
+usg: sets frame except time
+ex: >>>set_frame_except_time 4
+
+cmd: set_width [number]
+usg: sets width to play
+ex: >>>set_width 60
+
+cmd: set_is_clear_on
+usg: turn on clear when plays each frame
+ex: >>>set_is_clear_on
+
+cmd: set_is_clear_off
+usg: turn off clear when plays each frame
+ex: >>>set_is_clear_off
+
+cmd: render
+usg: starts rendering
+ex: >>>render
+
+cmd: load_save
+usg: loads last status
+ex: >>> load_save
+
+cmd: save_and_exit
+usg: saves current status and exit
+ex: >>>save_and_exit
+
+cmd: save
+usg: saves current status
+ex: >>>save
+
+cmd: exit
+usg: exit
+ex: >>>exit
